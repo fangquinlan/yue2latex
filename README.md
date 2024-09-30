@@ -7,10 +7,10 @@ This repository provides tools to convert Cantonese text into IPA (International
 
 ## Features
 
-* Cantonese to IPA conversion
-* Cantonese to Pinyin conversion
-* IPA to Pinyin conversion
-* Output in LaTeX format for easy integration with TeXstudio and other LaTeX editors.
+* `yue2ipa.py`: Cantonese to IPA conversion 
+* `yue2py.py`: Cantonese to Pinyin conversion 
+* `ipa2py.py`: IPA to Pinyin conversion 
+* `yue2latex.py` Output in LaTeX format for easy integration with TeXstudio and other LaTeX editors. 
 
 ## 功能
 
@@ -28,10 +28,3 @@ This repository provides tools to convert Cantonese text into IPA (International
 The Cantonese to IPA conversion rules are based on the work from [lotusfa/IPA-Translator](https://github.com/lotusfa/IPA-Translator).  
 
 粤语到 IPA 的转换规则基于 [lotusfa/IPA-Translator](https://github.com/lotusfa/IPA-Translator) 中的工作。 
-
-
-## Limitations / 局限性
-
-Currently, this tool does not handle polyphonic characters (characters with multiple pronunciations) perfectly.  It only selects the first conversion rule encountered for a polyphonic character.
-
-目前，此工具不能完美地处理多音字。它只为多音字选择遇到的第一个转换规则。
