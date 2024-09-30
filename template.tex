@@ -1,0 +1,64 @@
+\documentclass{article}
+\usepackage{ctex}
+\usepackage[usestackEOL]{stackengine}
+\usepackage{xcolor}
+\usepackage{fontspec}
+\usepackage{microtype}
+\usepackage[paper=b5paper]{geometry}
+
+% 字体设置
+\setCJKfamilyfont{cn}{MSungHKMedium.otf}
+\newcommand{\cntext}[1]{{\CJKfamily{cn}#1}} 
+
+\newfontfamily\ipa{CharisSIL-Regular.ttf}[
+BoldFont = CharisSIL-Bold.ttf,
+ItalicFont = CharisSIL-Italic.ttf,
+BoldItalicFont = CharisSIL-BoldItalic.ttf,]
+
+% 颜色定义
+\definecolor{ipacolor}{RGB}{0,0,139}  % 深蓝色
+\definecolor{cncolor}{RGB}{0,100,0}   % 深绿色
+
+% 注释命令
+\newcommand{\anno}[2]{%
+	\stackon[2pt]{%
+		{\cntext{\small\textcolor{cncolor}{#1}}}%
+	}{{\ipa\small\textcolor{ipacolor}{#2}}}%
+}
+
+\begin{document}
+	
+	\noindent
+	
+	\anno{還}{sü:n21}\anno{記}{giei33}\anno{得}{di5}\anno{當}{dao:ng55}\anno{天}{ti:n55}\anno{旅}{louü13}\anno{館}{gu:n35}\anno{的}{di:55}\anno{門}{mu:n35}\anno{牌}{pa:i21} \\
+	\anno{還}{sü:n21}\anno{留}{liu21}\anno{住}{zü:22}\anno{笑}{si:u33}\anno{著}{zue:3}\anno{離}{liei21}\anno{開}{hao:i55}\anno{的}{di:55}\anno{神}{sin21}\anno{態}{ta:i33} \\
+	\anno{當}{dao:ng55}\anno{天}{ti:n55}\anno{整}{zɪng35}\anno{個}{gao:33}\anno{城}{sê:ng21}\anno{市}{si:13}\anno{那}{a:22}\anno{樣}{jue:ng22}\anno{輕}{hê:ng55}\anno{快}{fa:i33} \\
+	\anno{沿}{jü:n21}\anno{路}{lou22}\anno{一}{jid55}\anno{起}{hiei35}\anno{走}{ziu35}\anno{半}{bu:n33}\anno{哩}{lê:55}\anno{長}{cue:ng21}\anno{街}{ga:i55} \\
+	\anno{還}{sü:n21}\anno{記}{giei33}\anno{得}{di5}\anno{街}{ga:i55}\anno{燈}{ding55}\anno{照}{zi:u33}\anno{出}{coud55}\anno{一}{jid55}\anno{臉}{li:m13}\anno{黃}{wao:ng21} \\
+	\anno{還}{sü:n21}\anno{燃}{ji:n21}\anno{亮}{lue:ng22}\anno{那}{a:22}\anno{份}{bin55}\anno{微}{miei21}\anno{溫}{win55}\anno{的}{di:55}\anno{便}{bi:n22}\anno{當}{dao:ng55} \\
+	\anno{剪}{zi:n35}\anno{影}{ie:ng35}\anno{的}{di:55}\anno{你}{niei13}\anno{輪}{loun21}\anno{廓}{gwao:3}\anno{太}{ta:i33}\anno{好}{hou35}\anno{看}{hao:n55} \\
+	\anno{凝}{jɪng21}\anno{住}{zü:22}\anno{眼}{nga:n13}\anno{淚}{louü22}\anno{才}{cao:i21}\anno{敢}{gim35}\anno{細}{sii33}\anno{看}{hao:n55} \\
+	\anno{忘}{mao:ng21}\anno{掉}{dê:u22}\anno{天}{ti:n55}\anno{地}{diei22} \anno{仿}{fao:ng35}\anno{佛}{bid22}\anno{也}{ia:13}\anno{想}{sue:ng35}\anno{不}{bid55}\anno{起}{hiei35}\anno{自}{zi:22}\anno{己}{giei35} \\
+	\anno{仍}{jɪng21}\anno{未}{miei22}\anno{忘}{mao:ng21}\anno{相}{sue:ng35}\anno{約}{jue:3} \anno{看}{hao:n55}\anno{漫}{ma:n22}\anno{天}{ti:n55}\anno{黃}{wao:ng21}\anno{葉}{ji:b22}\anno{遠}{jü:n13}\anno{飛}{fiei55} \\
+	\anno{就}{ziu22}\anno{算}{sü:n33}\anno{會}{ku:i35}\anno{與}{jü:21}\anno{你}{niei13}\anno{分}{fin55}\anno{離}{liei21} \anno{淒}{cii55}\anno{絕}{zü:d33}\anno{的}{di:55}\anno{戲}{fu:55} \\
+	\anno{要}{ji:u55}\anno{決}{kü:d33}\anno{心}{sim55}\anno{忘}{mao:ng21}\anno{記}{giei33} \anno{我}{ngao:13}\anno{便}{bi:n22}\anno{記}{giei33}\anno{不}{bid55}\anno{起}{hiei35} \\
+	\anno{明}{mɪng21}\anno{日}{jid22}\anno{天}{ti:n55}\anno{地}{diei22} \anno{只}{zê:3}\anno{恐}{hong35}\anno{怕}{pa:33}\anno{認}{jin22}\anno{不}{bid55}\anno{出}{coud55}\anno{自}{zi:22}\anno{己}{giei35} \\
+	\anno{仍}{jɪng21}\anno{未}{miei22}\anno{忘}{mao:ng21}\anno{跟}{gin55}\anno{你}{niei13}\anno{約}{jue:3}\anno{定}{dê:ng22} \anno{假}{ga:35}\anno{如}{jü:21}\anno{沒}{mu:d22}\anno{有}{jiu13}\anno{死}{siei35} \\
+	\anno{就}{ziu22}\anno{算}{sü:n33}\anno{你}{niei13}\anno{壯}{zao:ng33}\anno{闊}{fu:d33}\anno{胸}{hong55}\anno{膛}{tao:ng21} \anno{不}{bid55}\anno{敵}{dɪ2}\anno{天}{ti:n55}\anno{氣}{hiei33} \\
+	\anno{兩}{lue:ng13}\anno{鬢}{bin33}\anno{斑}{ba:n55}\anno{白}{ba:2}\anno{都}{dou55}\anno{可}{hi5}\anno{認}{jin22}\anno{得}{di5}\anno{你}{niei13} \\
+	\anno{還}{sü:n21}\anno{記}{giei33}\anno{得}{di5}\anno{當}{dao:ng55}\anno{天}{ti:n55}\anno{結}{gi:d33}\anno{他}{ta:55}\anno{的}{di:55}\anno{和}{wao:21}\anno{弦}{ji:n21} \\
+	\anno{還}{sü:n21}\anno{明}{mɪng21}\anno{白}{ba:2}\anno{每}{mu:i13}\anno{段}{dü:n22}\anno{旋}{sü:n21}\anno{律}{loud22}\anno{的}{di:55}\anno{伏}{bʊ2}\anno{線}{si:n33} \\
+	\anno{當}{dao:ng55}\anno{天}{ti:n55}\anno{街}{ga:i55}\anno{角}{gao:3}\anno{流}{liu21}\anno{過}{gwao:55}\anno{你}{niei13}\anno{聲}{sê:ng55}\anno{線}{si:n33} \\
+	\anno{沿}{jü:n21}\anno{路}{lou22}\anno{旅}{louü13}\anno{程}{cɪng21}\anno{如}{jü:21}\anno{歌}{gao:55}\anno{褪}{tin33}\anno{變}{bi:n33} \\
+	\anno{忘}{mao:ng21}\anno{掉}{dê:u22}\anno{天}{ti:n55}\anno{地}{diei22} \anno{仿}{fao:ng35}\anno{佛}{bid22}\anno{也}{ia:13}\anno{想}{sue:ng35}\anno{不}{bid55}\anno{起}{hiei35}\anno{自}{zi:22}\anno{己}{giei35} \\
+	\anno{仍}{jɪng21}\anno{未}{miei22}\anno{忘}{mao:ng21}\anno{相}{sue:ng35}\anno{約}{jue:3} \anno{看}{hao:n55}\anno{漫}{ma:n22}\anno{天}{ti:n55}\anno{黃}{wao:ng21}\anno{葉}{ji:b22}\anno{遠}{jü:n13}\anno{飛}{fiei55} \\
+	\anno{就}{ziu22}\anno{算}{sü:n33}\anno{會}{ku:i35}\anno{與}{jü:21}\anno{你}{niei13}\anno{分}{fin55}\anno{離}{liei21} \anno{淒}{cii55}\anno{絕}{zü:d33}\anno{的}{di:55}\anno{戲}{fu:55} \\
+	\anno{要}{ji:u55}\anno{決}{kü:d33}\anno{心}{sim55}\anno{忘}{mao:ng21}\anno{記}{giei33} \anno{我}{ngao:13}\anno{便}{bi:n22}\anno{記}{giei33}\anno{不}{bid55}\anno{起}{hiei35} \\
+	\anno{明}{mɪng21}\anno{日}{jid22}\anno{天}{ti:n55}\anno{地}{diei22} \anno{只}{zê:3}\anno{恐}{hong35}\anno{怕}{pa:33}\anno{認}{jin22}\anno{不}{bid55}\anno{出}{coud55}\anno{自}{zi:22}\anno{己}{giei35} \\
+	\anno{仍}{jɪng21}\anno{未}{miei22}\anno{忘}{mao:ng21}\anno{跟}{gin55}\anno{你}{niei13}\anno{約}{jue:3}\anno{定}{dê:ng22} \anno{假}{ga:35}\anno{如}{jü:21}\anno{沒}{mu:d22}\anno{有}{jiu13}\anno{死}{siei35} \\
+	\anno{就}{ziu22}\anno{算}{sü:n33}\anno{你}{niei13}\anno{壯}{zao:ng33}\anno{闊}{fu:d33}\anno{胸}{hong55}\anno{膛}{tao:ng21} \anno{不}{bid55}\anno{敵}{dɪ2}\anno{天}{ti:n55}\anno{氣}{hiei33} \\
+	\anno{兩}{lue:ng13}\anno{鬢}{bin33}\anno{斑}{ba:n55}\anno{白}{ba:2}\anno{都}{dou55}\anno{可}{hi5}\anno{認}{jin22}\anno{得}{di5}\anno{你}{niei13} \\
+	\anno{就}{ziu22}\anno{算}{sü:n33}\anno{你}{niei13}\anno{壯}{zao:ng33}\anno{闊}{fu:d33}\anno{胸}{hong55}\anno{膛}{tao:ng21} \anno{不}{bid55}\anno{敵}{dɪ2}\anno{天}{ti:n55}\anno{氣}{hiei33} \\
+	\anno{兩}{lue:ng13}\anno{鬢}{bin33}\anno{斑}{ba:n55}\anno{白}{ba:2}\anno{都}{dou55}\anno{可}{hi5}\anno{認}{jin22}\anno{得}{di5}\anno{你}{niei13}
+	
+\end{document}
