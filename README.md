@@ -21,7 +21,7 @@ This repository provides tools to convert Cantonese text into IPA (International
 
 ## Example / 示例
 
-![示例.jpg](示例.jpg)
+![示例.jpg](示例.png)
 
 ## Conversion Rules / 转换规则
 
